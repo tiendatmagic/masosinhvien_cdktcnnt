@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" manifest="demo.appcache">
 <head>
-    <title>Page Title</title>
-    <script src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.dataTables.min.js"></script>
-    <link rel="stylesheet" href="./css/jquery.dataTables.min.css" />
+  <title>Phân trang ảo với Bootstrap --- dammio.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-        .tablee {
-            width: 100%;
-
-        }
-
-        .table-primary > tbody > tr:nth-of-type(odd) {
-        background-color: rgb(250, 221, 226);
-}
-    </style>
+ 
+  <script>  
+    $(document).ready(function() {
+     
+    $('#table_id').dataTable({}); // dòng này để nhúng bảng biểu thành dạng bảng được phân trang
+         
+    } ); 
+  </script>   
+     
 </head>
 
 <body>
@@ -7247,6 +7246,10 @@
 
 
 
+
+
+
+                <!-- --K13-- -->
                 <tr>
                     <td>
                         1
@@ -17243,16 +17246,13 @@
         </table>
     </div>
 
-    <script>
-        $(document).ready(function () {
-            $('#table_id').DataTable();
-        });
-    </script>
+
     <!-- <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script> -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
