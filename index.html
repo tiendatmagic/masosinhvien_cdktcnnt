@@ -3,14 +3,24 @@
 
 <head>
     <title>Page Title</title>
-    <link rel="stylesheet" href="./css/jquery.dataTables.min.css" />
     <script src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery.dataTables.min.css" />
+
     <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
         .tablee {
             width: 100%;
 
         }
+
+        .table-primary > tbody > tr:nth-of-type(odd) {
+        background-color: rgb(250, 221, 226);
+}
     </style>
 </head>
 
