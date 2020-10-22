@@ -5,13 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chào mừng các bạn đã đến với app danh sách sinh viên</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    -->
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             text-decoration: none;
+            outline: 0;
+            border: 0;
+
+
         }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            overflow: hidden;
+        }
+
+
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
 
         h1 {
             font-size: 3vw;
@@ -22,6 +54,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            outline: 0;
+            border: 0;
         }
 
         .flex a {
@@ -29,21 +63,33 @@
             background-color: pink;
             margin: 10px;
             border-radius: 50%;
-
+            overflow: hidden;
+            outline: 0;
+            border: 0;
 
         }
-  .footer{
-  
-    position: absolute;
-    bottom: 0px;
-    left: 25%;
-    
-}
 
-.footer h4{
-    font-size: 1.4vw;
-    text-align: center;
-}
+        .flex a:active {
+            outline: 0;
+            border: 0;
+            background-color: blue;
+
+        }
+
+
+
+        .footer {
+
+            position: absolute;
+            bottom: 0px;
+            left: 25%;
+
+        }
+
+        .footer h4 {
+            font-size: 1.4vw;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -51,32 +97,35 @@
     <h1 style="color:deeppink;"> Bạn thuộc khóa mấy?</h1>
 
     <div class="flex">
+
+
         <a href="./k12.html">
-        <div class="flex-k12">
-            <h1>K12</h1>
-        </div>
-    </a>
+            <div class="flex-k12">
+                <h1>K12</h1>
+            </div>
+        </a>
 
-    <a href="./k13.html">
-        <div class="flex-k13">
-            <h1>K13</h1>
-        </div>
-    </a>
+        <a href="./k13.html">
+            <div class="flex-k13">
+                <h1>K13</h1>
+            </div>
+        </a>
 
-        
-    <a href="./k14.html">
-        <div class="flex-k14">
-            <h1>K14</h1>
-        </div>
-    </a>
+
+        <a href="./k14.html">
+            <div class="flex-k14">
+                <h1>K14</h1>
+            </div>
+        </a>
 
     </div>
 
-    <div class="footer">   
+    <div class="footer">
         <h4 class="text-danger text-gt">© 2020 Copyright by Tiendatmagic - All Rights Reserved | Designed by
-           Tiendatmagic</h4>
-        <h4 class="text-danger text-gt">Liên hệ:<a href="https://www.facebook.com/tiendatmagic" style="color: deeppink;">Tiến Đạt Magic</a></h4>
-     </div>
+            Tiendatmagic</h4>
+        <h4 class="text-danger text-gt">Liên hệ:<a href="https://www.facebook.com/tiendatmagic"
+                style="color: deeppink;">Tiến Đạt Magic</a></h4>
+    </div>
 </body>
 
 </html>
