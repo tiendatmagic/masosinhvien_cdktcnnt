@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .tablee {
+        width: 100%;
+
+    }
+
+    .table-primary > tbody > tr:nth-of-type(odd) {
+    background-color: rgb(250, 221, 226);
+}
